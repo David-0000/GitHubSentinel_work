@@ -5,7 +5,7 @@ from logger import LOG  # 导入日志模块
 class LLM:
     def __init__(self):
         # 创建一个OpenAI客户端实例
-        self.client = OpenAI(api_key="sk-56d3e6db885a4a62b8246aa69de2870e", base_url="https://api.deepseek.com")
+        self.client = OpenAI(api_key="sk-56d3e2870e", base_url="https://api.deepseek.com")
         # 配置日志文件，当文件大小达到1MB时自动轮转，日志级别为DEBUG
         LOG.add("daily_progress/llm_logs.log", rotation="1 MB", level="DEBUG")
 
