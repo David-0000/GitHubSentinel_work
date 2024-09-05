@@ -15,8 +15,10 @@ from subscription_manager import SubscriptionManager
 from command_handler import CommandHandler
 from logger import LOG
 
+
 def run_scheduler(scheduler):
     scheduler.start()
+
 
 def main():
     config = Config()
@@ -26,7 +28,7 @@ def main():
     report_generator = ReportGenerator(llm)
     subscription_manager = SubscriptionManager(config.subscriptions_file)
     command_handler = CommandHandler(github_client, subscription_manager, report_generator)
-    
+
     scheduler = Scheduler(
         github_client=github_client,
         notifier=notifier,
@@ -34,7 +36,7 @@ def main():
         subscription_manager=subscription_manager,
         interval=config.update_interval
     )
-    
+
     scheduler_thread = threading.Thread(target=run_scheduler, args=(scheduler,))
     scheduler_thread.daemon = True
     # scheduler_thread.start()
@@ -56,6 +58,7 @@ def main():
                 LOG.error("Invalid command. Type 'help' to see the list of available commands.")
         except Exception as e:
             LOG.error(f"Unexpected error: {e}")
+
 
 if __name__ == '__main__':
     main()
