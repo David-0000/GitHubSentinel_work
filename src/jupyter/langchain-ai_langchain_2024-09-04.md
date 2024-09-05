@@ -1,0 +1,65 @@
+# langchain-ai/langchain Daily Progress - 2024-09-04
+
+## Issues
+- Improvement[Community] Improve args description in api doc of `DocArrayInMemorySearch` #26024
+- DOC: <Issue related to /v0.2/docs/integrations/text_embedding/nomic/> #26022
+- Refining Skip Count Calculation by Filtering Documents with `session_id` #26020
+- Prevent Infinite Tool Call Loop in Customer Support Agent (LangGraph) #26019
+- langchain-airbyte: Please bump Python 3.12 version limit #26018
+- Supabase vectorstore uses different schema from docs #26017
+- community: add Sineps modules #26016
+- Add the option to ignore structured output method to LLM graph transf¡­ #26013
+- get import tests passing #26011
+- DOC: <Issue related to /v0.2/docs/how_to/output_parser_xml/> the spelling mistake trained in first paragraph #26009
+-  chatchat kb -r   failed #26007
+- fireworks[major]: switch to pydantic v2 #26004
+- fix crash when using create_xml_agent with parameterless function as ¡­ #26002
+- openai[major]: switch to pydantic v2 #26001
+- anthropic: update pydantic #26000
+- mistralai: update pydantic #25995
+- docs: `integrations` reference updates 15 #25994
+- infra: ignore docs build in v0.3rc branch #25990
+- IndexOptionsConflict error in AzureCosmosDBSemanticCache when using multiple chat models. #25989
+- fix: HuggingFacePipeline model_id parameter #25973
+- Question: Does API Chain support post method? #25972
+- langchain_chroma: Pass through kwargs to Chroma collection.delete #25970
+- community: Add reference doc for Links #25969
+- PyPDFLoader introduces additional white spaces before umlauts in the middle of the word #25968
+- No option available instead of path to create object GoogleApiClient #25967
+- langchain: [indexing] [feature] support for mssql backend in indexing #25966
+- ChatGoogleGenerativeAI:TypeError: Parameter to MergeFrom() must be instance of same class: expected google.ai.generativelanguage.v1beta.FunctionDeclaration got FunctionDeclaration. When trying to bind @tools #25963
+- list index out of range for agents  #25964
+- Feature/update hunyuan #25960
+- community: Fix links in GraphVectorStore pydoc #25959
+
+## Pull Requests
+- Improvement[Community] Improve args description in api doc of `DocArrayInMemorySearch` #26024
+- Refining Skip Count Calculation by Filtering Documents with `session_id` #26020
+- community: add Sineps modules #26016
+- Add the option to ignore structured output method to LLM graph transf¡­ #26013
+- get import tests passing #26011
+- fireworks[major]: switch to pydantic v2 #26004
+- fix crash when using create_xml_agent with parameterless function as ¡­ #26002
+- openai[major]: switch to pydantic v2 #26001
+- anthropic: update pydantic #26000
+- mistralai: update pydantic #25995
+- docs: `integrations` reference updates 15 #25994
+- infra: ignore docs build in v0.3rc branch #25990
+- fix: HuggingFacePipeline model_id parameter #25973
+- langchain_chroma: Pass through kwargs to Chroma collection.delete #25970
+- community: Add reference doc for Links #25969
+- langchain: [indexing] [feature] support for mssql backend in indexing #25966
+- Feature/update hunyuan #25960
+- community: Fix links in GraphVectorStore pydoc #25959
+- community: Fix planner_prompt so api_controller defines "action" #25957
+- Add warning when page_content is empty #25955
+- MonsterAPI Integration #25948
+- community: add Azure Cosmos Mongo vCore Chat Message History #25946
+- Harrison/support kwargs vectorstore #25934
+- adapt to support epsilla cloud #25933
+- Feat: Cache text only option #25926
+- text_splitters: Add HTMLSemanticPreservingSplitter #25911
+- community: make MongodbLoader more customizable #25908
+- community[feat]: Add OpenSearch Chat Message History #25898
+- community: `NotDiamondRoutedRunnable` for langchain. #25897
+- More unit tests #25894
